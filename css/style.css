@@ -50,3 +50,15 @@ main {
   margin-top: 30px;
   font-size: 35px;
 }
+
+.blue {
+  color: rgb(0 0 255);
+}
+
+.green {
+  color: green;
+}
+
+.orange {
+  color: rgb(255 165 0);
+}

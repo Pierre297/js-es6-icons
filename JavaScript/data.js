@@ -1,4 +1,4 @@
-[
+const iconsElement = [
 	{
 		name: 'cat',
 		prefix: 'fa-',
@@ -112,3 +112,22 @@
 		color: 'blue'
 	}
 ];
+
+// crea una costante per stampare le icone in HTML
+const containerBox = document.getElementById("boxes-container");
+let createBoxes = '';
+
+// crea un ciclo per selezionare tutti gli elementi dell'array
+iconsElement.forEach((element) => {
+	console.log(`${element}`);
+	// concatenali per stamparli in pagina con la sequenza corretta
+	createBoxes =
+	// usa le chiavi con i colori per inserirle nella classe delle icone
+	 `
+	<div class="boxes">
+	<i class="${element.family} ${element.prefix}${element.name} ${element.type} ${element.color}"></i>
+    </div>
+	`;
+	containerBox.innerHTML += createBoxes;
+});
+
