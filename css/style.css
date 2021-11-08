@@ -42,8 +42,7 @@ main {
   border-radius: 25px;
   border: 1px black solid;
   margin: 30px;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .fas {
@@ -61,4 +60,8 @@ main {
 
 .orange {
   color: rgb(255 165 0);
+}
+
+.icons-name {
+  margin-top: 5px;
 }

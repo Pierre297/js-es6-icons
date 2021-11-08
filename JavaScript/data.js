@@ -126,6 +126,7 @@ iconsElement.forEach((element) => {
 	 `
 	<div class="boxes">
 	<i class="${element.family} ${element.prefix}${element.name} ${element.type} ${element.color}"></i>
+	<p class="icons-name">${element.name}</p>
     </div>
 	`;
 	containerBox.innerHTML += createBoxes;
